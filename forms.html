@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>FORM</title>
+    </head>
+    <body style=" background-color: mistyrose; text-align: margin-left: auto;">
+        <h1>Details</h1>
+        <form>
+            <b>Name:</b> <input type="text" required><br><br>
+            <b>Father Name:</b> <input type="text" required><br><br>
+            <b>Mother Name:</b> <input type="text"required><br><br>
+            <b>Mobile No:</b> <input type="tel" maxlength="10"required><br><br>
+            <b>Emai Id:</b> <input type="email"required><br><br>
+            <div>
+                <b>Gender:</b>
+                <select name="Gender">
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Others">Others</option>
+                </select> <br><br>        
+                <b>Date of Birth:</b> <input type="date" name="Date of Birth" min="1991-01-01" max="2000-12-31" required></input><br><br>
+                <b>Nationality:</b> <input list="Countries"required>
+                <datalist id=Countries>
+                    <option value="America"></option>
+                    <option value=">Bangladesh"></option>
+                    <option value="Canada"></option>
+                    <option value="Denmark"></option>
+                    <option value="England"></option>
+                    <option value="Italy"></option>
+                    <option value="India"></option>
+                    <option value="Indira"></option>
+                    <option value="Gangtok"></option>
+                    <option value="Russia"></option>
+                    <option value="Dubai"></option>
+                    <option value="Switzerland"></option>
+                </datalist><br><br>
+                <b>What do you like the most:</b> <input type="radio" name="food" >Chocolate</input> <input type="radio" name="food">Ice-creams</input> <input type="radio" name="food">Others</input><br><br>
+                <b>About Yourself:</b> <br>
+                <textarea name="answer" id="" cols="50" rows="10"></textarea><br><br>
+                <b>Upload passport size photo:</b>
+                <input type="file" name="Image"required><br><br>
+                <input type="checkbox" name="terms and conditions" value="accepted"required>I agree to the terms and conditions</input><br><br>
+                Password: 
+                <input type="hidden" name="Password">
+            </div> <br>
+            <input type="submit" style="background-color: rgb(219, 133, 186);" value="Submit"></input><br><br>
+            <input type="reset">
+        </form>
+    </body>
+</html>
